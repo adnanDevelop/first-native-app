@@ -21,7 +21,6 @@ const Profile = () => {
           }}
         />
       </View>
-      <Button color="green" title="Go to Dashboard" />
     </View>
   );
 };
