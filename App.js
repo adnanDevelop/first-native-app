@@ -1,31 +1,18 @@
 import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, View } from "react-native";
+
+import Profile from "./components/Profile";
+import Dashboard from "./components/Dashboard";
 
 const App = () => {
   return (
-    <View>
-      <Text style={styles.text}>hello world</Text>
-      <Button title="Button" />
-      <Button title="Button" style={{ marginTop: 20 }} />
-      <MyData />
+    <View style={{ marginTop: 40 }}>
+      <Profile />
+      <Dashboard />
     </View>
   );
 };
 
 export default App;
 
-const MyData = () => {
-  return <Text style={{ marginTop: 20 }}>MyData</Text>;
-};
-
-const styles = StyleSheet.create({
-  text: {
-    color: "red",
-    fontSize: 20,
-  },
-  btnStyle: {
-    backgroundColor: "red !important",
-    marginTop: 10,
-    color: "white",
-  },
-});
+const styles = StyleSheet.create({});
