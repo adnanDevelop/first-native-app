@@ -1,20 +1,28 @@
 import { StyleSheet, Text, View, Button } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 
 const Profile = () => {
-  const onPress = (value) => {
-    console.log("Dashboard");
-    alert(`Hy my name is ${value}`);
-  };
+  const [name, setName] = useState("John");
+
+  console.log(name);
 
   return (
     <View>
-      <Text>Profile component</Text>
-      <Button
-        color="green"
-        title="Go to Dashboard"
-        onPress={() => onPress("Adnan")}
-      />
+      <Text>My name is : {name}</Text>
+      <View>
+        <Button
+          title="Increment"
+          onPress={() => {
+            if (name === "Adnan") {
+              setName("John");
+            } else {
+              setName("Adnan");
+            }
+          }}
+        />
+        <Button title="Decrement" />
+      </View>
+      <Button color="green" title="Go to Dashboard" />
     </View>
   );
 };
