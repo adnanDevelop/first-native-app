@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { StyleSheet, View, Text, TextInput, Button } from "react-native";
+import FlatListComponent from "./FlatListComponent";
 
 const App = () => {
   return (
     <View style={{ marginTop: 50, paddingHorizontal: 14 }}>
-      <Text>working</Text>
+      <FlatListComponent />
     </View>
   );
 };

@@ -1,0 +1,7 @@
+FlatList is a component in React Native that provides an efficient way to render a large list of items. It is optimized for handling large data sets, and it provides features like lazy loading, efficient scrolling, and item recycling.
+
+Here are some key features and properties of FlatList:
+
+- Data Prop: Takes an array of data to be rendered.
+- RenderItem Prop: A function that defines how to render each item in the list.
+- KeyExtractor Prop: A function that provides unique keys for each item, which is necessary for efficient rendering and updates.
