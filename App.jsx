@@ -1,14 +1,10 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
-
-import Profile from "./components/Profile";
-import StylePage from "./components/StylePage";
+import { StyleSheet, View, Text } from "react-native";
 
 const App = () => {
   return (
-    <View style={{ marginTop: 40 }}>
-      <Profile />
-      <StylePage />
+    <View style={{ marginTop: 40, paddingLeft: 14 }}>
+      <Text>workng</Text>
     </View>
   );
 };
