@@ -1,18 +1,58 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 
 import Profile from "./components/Profile";
 import StylePage from "./components/StylePage";
 
 const App = () => {
   return (
-    <View style={{ marginTop: 40 }}>
-      <Profile />
-      <StylePage />
-    </View> 
+    <View style={styles.container}>
+      <View style={styles.subChildOne}>
+        <Text style={{ color: "white", fontSize: 20 }}>Container 1 </Text>
+      </View>
+      <View style={styles.subChildTwo}>
+        <Text style={{ color: "white", fontSize: 20 }}>Container 2</Text>
+      </View>
+      <View style={styles.subChildThree}>
+        <Text style={{ color: "white", fontSize: 20 }}>Container 3</Text>
+      </View>
+      <View style={styles.subChildFour}>
+        <Text style={{ color: "white", fontSize: 20 }}>Container 4</Text>
+      </View>
+    </View>
   );
 };
 
 export default App;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 40,
+    flex: 1,
+    gap: 10,
+  },
+  subChildOne: {
+    flex: 1,
+    backgroundColor: "red",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  subChildTwo: {
+    flex: 1,
+    backgroundColor: "green",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  subChildThree: {
+    flex: 1,
+    backgroundColor: "blue",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  subChildFour: {
+    flex: 1,
+    backgroundColor: "gray",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
