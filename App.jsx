@@ -9,7 +9,7 @@ const App = () => {
     <View style={{ marginTop: 40 }}>
       <Profile />
       <StylePage />
-    </View>
+    </View> 
   );
 };
 

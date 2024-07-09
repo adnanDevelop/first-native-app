@@ -4,8 +4,6 @@ import React, { useState } from "react";
 const Profile = () => {
   const [name, setName] = useState("John");
 
-  console.log(name);
-
   return (
     <View>
       <Text>My name is : {name}</Text>
