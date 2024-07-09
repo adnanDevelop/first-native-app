@@ -11,7 +11,7 @@ const Profile = () => {
       <Text>My name is : {name}</Text>
       <View>
         <Button
-          title="Increment"
+          title="Change Name"
           onPress={() => {
             if (name === "Adnan") {
               setName("John");
@@ -20,7 +20,6 @@ const Profile = () => {
             }
           }}
         />
-        <Button title="Decrement" />
       </View>
       <Button color="green" title="Go to Dashboard" />
     </View>

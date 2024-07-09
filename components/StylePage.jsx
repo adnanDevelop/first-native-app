@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const Dashboard = () => {
+const StylePage = () => {
   return (
     <View>
-      <Text>Dashboard component</Text>
+      <Text>StylePage component</Text>
     </View>
   );
 };
 
-export default Dashboard;
+export default StylePage;
 
 const styles = StyleSheet.create({});
