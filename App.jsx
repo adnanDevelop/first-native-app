@@ -16,9 +16,9 @@ const App = () => {
       <View style={styles.subChildThree}>
         <Text style={{ color: "white", fontSize: 20 }}>Container 3</Text>
       </View>
-      <View style={styles.subChildFour}>
+      {/* <View style={styles.subChildFour}>
         <Text style={{ color: "white", fontSize: 20 }}>Container 4</Text>
-      </View>
+      </View> */}
     </View>
   );
 };
@@ -29,7 +29,9 @@ const styles = StyleSheet.create({
   container: {
     marginTop: 40,
     flex: 1,
-    gap: 10,
+    // flexDirection: "row",
+    overflowX: "scroll",
+    width: "100%",
   },
   subChildOne: {
     flex: 1,
