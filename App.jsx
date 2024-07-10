@@ -3,9 +3,10 @@ import { StyleSheet, View, Text } from "react-native";
 
 // Components
 // import RadioBtn from "./components/RadioBtn";
+// import DefaultModal from "./components/DefaultModal";
 // import TouchableButton from "./components/TouchableButton";
-import IndicatorLoader from "./components/ActivityIndicator";
-import DefaultModal from "./components/DefaultModal";
+// import IndicatorLoader from "./components/ActivityIndicator";
+import PressableComponent from "./components/PressableComponent";
 
 const App = () => {
   return (
@@ -14,9 +15,10 @@ const App = () => {
       {/* <TouchableButton /> 
       {/* <RadioBtn /> 
       <IndicatorLoader />
-      */}
-
       <DefaultModal />
+       */}
+
+      <PressableComponent />
     </View>
   );
 };
