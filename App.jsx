@@ -5,6 +5,7 @@ import { StyleSheet, View, Text } from "react-native";
 // import RadioBtn from "./components/RadioBtn";
 // import TouchableButton from "./components/TouchableButton";
 import IndicatorLoader from "./components/ActivityIndicator";
+import DefaultModal from "./components/DefaultModal";
 
 const App = () => {
   return (
@@ -14,8 +15,8 @@ const App = () => {
       {/* <RadioBtn /> 
       <IndicatorLoader />
       */}
-      
 
+      <DefaultModal />
     </View>
   );
 };
