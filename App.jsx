@@ -6,11 +6,12 @@ import { StyleSheet, View, Text } from "react-native";
 // import DefaultModal from "./components/DefaultModal";
 // import TouchableButton from "./components/TouchableButton";
 // import IndicatorLoader from "./components/ActivityIndicator";
-import PressableComponent from "./components/PressableComponent";
+// import PressableComponent from "./components/PressableComponent";
+import StatusBarCom from "./components/StatusBarCom";
 
 const App = () => {
   return (
-    <View style={{ marginTop: 40, padding: 10 }}>
+    <View style={{ paddingHorizontal: 10 }}>
       <Text>native app</Text>
       {/* <TouchableButton /> 
       {/* <RadioBtn /> 
@@ -19,9 +20,7 @@ const App = () => {
        
       <PressableComponent />
       */}
-
-        
-
+      <StatusBarCom />
     </View>
   );
 };
