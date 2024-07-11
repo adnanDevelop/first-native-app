@@ -1,26 +1,20 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+const Stack = createNativeStackNavigator();
 
-// Components
-// import RadioBtn from "./components/RadioBtn";
-// import DefaultModal from "./components/DefaultModal";
-// import StatusBarCom from "./components/StatusBarCom";
-// import TouchableButton from "./components/TouchableButton";
-// import IndicatorLoader from "./components/ActivityIndicator";
-// import PressableComponent from "./components/PressableComponent";
+import Login from "./screens/Login";
+import Signup from "./screens/Signup";
 
 const App = () => {
   return (
-    <View style={{ paddingHorizontal: 10 }}>
-      <Text>native app</Text>
-      {/* <TouchableButton /> 
-      {/* <RadioBtn /> 
-      <IndicatorLoader />
-      <DefaultModal /> 
-      <PressableComponent />
-      <StatusBarCom />
-      */}
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="SignUp" component={Signup} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
