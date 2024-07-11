@@ -16,9 +16,12 @@ const App = () => {
       {/* <RadioBtn /> 
       <IndicatorLoader />
       <DefaultModal />
-       */}
-
+       
       <PressableComponent />
+      */}
+
+        
+
     </View>
   );
 };
